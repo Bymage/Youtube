@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <byyoutube translate="label" module="byyoutube">
+            <label>Youtube</label>
+            <tab>bymage</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>11032</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <apikey translate="label comment">
+                            <label>ApiKey</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </apikey>
+                        <youTubeChannelURL translate="label comment">
+                            <label>YouTube Channel URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </youTubeChannelURL>
+                        <youTubePlaylistURL translate="label comment">
+                            <label>YouTube Playlist URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </youTubePlaylistURL>
+                        <youmaxDefaultTab translate="label comment">
+                            <label>Frontend Quick View Text</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>byyoutube/source_tab</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </youmaxDefaultTab>
+                        <youmaxColumns translate="label comment">
+                            <label>Youmax Columns</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </youmaxColumns>
+                        <showVideoInLightbox translate="label comment">
+                            <label>Show Video In Lightbox</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showVideoInLightbox>
+                        <maxResults translate="label comment">
+                            <label>Max Results</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </maxResults>
+                    </fields>
+                </general>
+               
+            </groups>
+        </byyoutube>
+    </sections>
+</config>

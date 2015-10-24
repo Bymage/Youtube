@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @author Bymage Team
+* @copyright Copyright (c)  2015 Bymage (http://www.bymage.com)
+* @package Bymage_Youtube
+*/
+-->
+<config>
+    <modules>
+        <Bymage_Youtube>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Bymage_Youtube>
+    </modules>
+</config>

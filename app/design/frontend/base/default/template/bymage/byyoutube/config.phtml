@@ -1,0 +1,16 @@
+<?php 
+/**
+* @author Bymage Team
+* @copyright Copyright (c)  2014 Bymage (http://www.bymage.com)
+* @package Bymage_Youtube
+*/  
+?>
+<script src="<?php echo $this->getSkinUrl('js/bymage/plugins/jquery.js');?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bymage/plugins/youmax/youmax.js');?>"></script>
+<link rel="stylesheet" href="<?php echo $this->getSkinUrl('js/bymage/plugins/youmax/youmax.css');?>"/>
+
+<h1 style="text-align: center"><?php echo $this->__("See our Youtube Video")?></h1>
+<div id="youmax"></div>
+<script>
+    jQuery('#youmax').youmax(<?php echo $this->javascriptParams()?>);
+</script>

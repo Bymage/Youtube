@@ -1,0 +1,18 @@
+.amquickview-hover
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 99999;
+    top: 10%;
+}
+
+.amquickview-hover a
+{
+    cursor: pointer;
+}
+
+img.am-quickview-icon
+{
+    display: inline !important;
+}

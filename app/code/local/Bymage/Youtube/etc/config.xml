@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Bymage_Youtube>
+            <version>1.0.0</version>
+        </Bymage_Youtube>
+    </modules>
+
+    
+    <frontend>
+        <translate>
+            <modules>
+                <Bymage_Youtube>
+                    <files>
+                        <default>Bymage_Youtube.csv</default>
+                    </files>
+                </Bymage_Youtube>
+            </modules>
+        </translate>
+        
+        <!--layout>
+            <updates>
+                <byyoutube>
+                    <file>bymage/byyoutube.xml</file>
+                </byyoutube>
+            </updates>
+        </layout-->
+        
+        <routers>
+            <byyoutube>
+                <use>standard</use>
+                <args>
+                    <module>Bymage_Youtube</module>
+                    <frontName>byyoutube</frontName>
+                </args>
+            </byyoutube>
+        </routers>
+    </frontend>
+    
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <Bymage_Quickview>
+                    <files>
+                        <default>Bymage_Youtube.csv</default>
+                    </files>
+                </Bymage_Quickview>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <byyoutube translate="title" module="byyoutube">
+                                            <title>Youtube</title>
+                                        </byyoutube>
+                                    </children>
+                                </config>
+                            </children>
+                        </system> 
+                     </children>
+                </admin> 
+            </resources>
+        </acl>
+    </adminhtml>
+    
+    
+    
+    <global>
+        <models>
+            <byyoutube>
+                <class>Bymage_Youtube_Model</class>
+            </byyoutube>
+        </models>
+        
+		<resources>
+             <byyoutube_setup>
+                <setup>
+                    <module>Bymage_Youtube</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </byyoutube_setup>
+		    <byyoutube_write>
+		        <connection><use>core_write</use></connection>
+		    </byyoutube_write>
+		    <byyoutube_read>
+		        <connection><use>core_read</use></connection>
+		    </byyoutube_read>
+		</resources>
+		  
+        
+        <blocks>
+            <byyoutube>
+                <class>Bymage_Youtube_Block</class>
+            </byyoutube>
+
+        </blocks>
+        
+        <helpers>
+            <byyoutube>
+                <class>Bymage_Youtube_Helper</class>
+            </byyoutube>
+        </helpers>
+
+        
+    </global>
+    
+    <default>
+        <byyoutube>
+            <general>
+                <apikey>AIzaSyDEm5wGLsWi2G3WG40re-DAJcWioQSpJ6o</apikey>
+                <youTubeChannelURL>https://www.youtube.com/user/BymageTeam</youTubeChannelURL>
+                <youTubePlaylistURL>https://www.youtube.com/playlist?list=PLDJ6ChdNPb-WvEWjZTh3omHQuTw6m1lDD</youTubePlaylistURL>
+                <youmaxDefaultTab>UPLOADS</youmaxDefaultTab>
+                <youmaxColumns>3</youmaxColumns>
+                <showVideoInLightbox>false</showVideoInLightbox>
+                <maxResults>15</maxResults>
+            </general>
+        </byyoutube>
+    </default>
+</config>

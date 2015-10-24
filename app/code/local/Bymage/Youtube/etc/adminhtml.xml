@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <translate>
+        <modules>
+            <Bymage_Youtube>
+                <files>
+                    <default>Bymage_Youtube.csv</default>
+                </files>
+            </Bymage_Youtube>
+        </modules>
+    </translate>
+</config>
